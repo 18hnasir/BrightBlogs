@@ -1,0 +1,19 @@
+img {
+    width: 60%;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    padding-left: 5%;
+}
+
+.navbar-nav {
+    font-size: larger;
+    padding-right: 10%;
+}
+
+

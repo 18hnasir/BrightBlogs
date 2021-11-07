@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.addSpacing {
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
+.addSpacing2 {
+    padding-bottom: 2%;
+}
+
+.card-subtitle {
+    padding-bottom: 3%;
+}
+
+.center {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.center2 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.rowStyle {
+    margin-top: 3%;
+}
+
+.style {
+    font-family: 'Fjalla One', sans-serif;
+    padding-bottom: 1%;
+}
