@@ -1,0 +1,32 @@
+<div class="row rowStyle">
+    <div class="col-3">
+
+    </div>
+    <div class="col-6">
+        <div class="col-12">
+            <h1> {{currentBlog.title}} </h1>
+        </div>
+        <div class="col-12">
+            <h4> {{currentBlog.subTitle}} </h4>
+        </div>
+        <div class="col-12">
+            <p> {{currentBlog.body}} </p>
+        </div>
+        <div class="col-12 addSpacing">
+            <h5>Comments</h5>
+            <hr class="hr1">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="What are your thoughts?" #comment>
+                <button class="btn btn-outline-secondary" (click)="makeComment(comment)" type="button">Comment</button>
+            </div>
+        </div>
+        <div class="col-12" *ngFor = "let c of comments">
+            <p><strong> {{c.uname}} </strong></p>
+            <p> {{c.comment}} </p>
+            <hr>
+        </div>
+    </div>
+    <div class="col-3">
+
+    </div>
+</div>

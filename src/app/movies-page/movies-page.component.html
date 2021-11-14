@@ -51,77 +51,17 @@
                 </div>
               </div>
         </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Vestibulum Ante Ipsum</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Proin odio sem, mollis ac justo ullamcorpera</h6>
-                  <p class="card-text">Phasellus aliquet quis felis quis eleifend. Curabitur turpis. Aliquam tincidunt, arcu quis tincidunt placerat, urna</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
+        <div class="col" *ngFor = "let movieBlog of movieBlogs">
+          <div class="card mx-auto h-100" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title"> {{movieBlog.title}} </h5>
+                <h6 class="card-subtitle mb-2 text-muted"> {{movieBlog.subTitle}} </h6>
+                <p class="card-text"> {{movieBlog.body | slice:0:200}}... </p>   
               </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Integer Venenatis Lorem</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Mollis ac ullamcorper, molestie vehicula</h6>
-                  <p class="card-text">Phasellus aliquet quis felis quis eleifend. Curabitur vitae dictum turpis. Tincidunt placerat, urna</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
+              <div class="card-footer">
+                <a routerLink="/blog-page"><button type="button" class="btn btn-outline-dark">Read Post</button></a>
               </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Vivamus Rutrum Accumsan</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Xroin odio sem, mollis ac justo ullamcorpe</h6>
-                  <p class="card-text">Phasellus aliquet quis felis quis eleifend. Liquam tincidunt, arcu quis tincidunt placerat, urna</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Curabitur Vitae Dictum Turpis</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Efficitur dapibus. Integer accumsan libero mauris, sit</h6>
-                  <p class="card-text">Praesent nec elementum dolor. Phasellus commodo bibendum nulla, ut imperdiet purus vestibulum</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Rutrum Accumsan</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Odio sem, mollis ac justo ullamcorpe</h6>
-                  <p class="card-text">Phasellus aliquet quis fiquam tincidunt, arcu quis tincidunt placerat, urna</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Hurabitur Vitae Turpis</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Efficitur accumsan libero mauris, sit</h6>
-                  <p class="card-text">Praesen dolor. Phasellus commodo bibendum nulla, ut imperdiet purus vestibulum</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
+          </div>
         </div>
     </div>
 </div>

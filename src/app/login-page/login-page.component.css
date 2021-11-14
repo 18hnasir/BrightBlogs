@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    margin-left: 6%;
+    padding-top: 5%;
+}
+
+.rowStyle {
+    height: 100vh;
+}
+
+.style {
+    padding-top: 10%;
+    margin-left: 28%;
+}
+
+.style2 {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5%;
+}

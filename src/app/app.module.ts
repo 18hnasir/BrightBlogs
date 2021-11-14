@@ -8,6 +8,10 @@ import { MoviesPageComponent } from './movies-page/movies-page.component';
 import { GamesPageComponent } from './games-page/games-page.component';
 import { TvPageComponent } from './tv-page/tv-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AddBlogPageComponent } from './add-blog-page/add-blog-page.component';
+import { FormsModule } from '@angular/forms';
+import { BlogPageComponent } from './blog-page/blog-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { HomePageComponent } from './home-page/home-page.component';
     MoviesPageComponent,
     GamesPageComponent,
     TvPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    AddBlogPageComponent,
+    BlogPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

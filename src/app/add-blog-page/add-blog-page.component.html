@@ -1,0 +1,39 @@
+<div class="row rowStyle">
+    <div class="row">
+        <h2 class="addSpacing"><strong>Make a Post</strong></h2>
+    </div>
+    <div class="col-4">
+
+    </div>
+    <div class="col-4">
+        <form class="row g-3">
+            <div class="col-12">
+              <label class="form-label">Title</label>
+              <input class="form-control" placeholder="Add title" name="title" #title>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Sub Title</label>
+              <input class="form-control" placeholder="Add sub title" name="subTitle" #subTitle>
+            </div>
+            <div class="col-12">
+                <label class="form-label">Category</label>
+                <select class="form-select" [(ngModel)]="category" name="category">
+                    <option value="Movie">Movie</option>
+                    <option value="Game">Game</option>
+                    <option value="TV">TV</option>
+                </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Body</label>
+              <textarea class="form-control" placeholder="Add blog content" rows="15" name="body" #body></textarea>
+            </div>
+            <div class="col-12">
+              <button type="button" (click)="addBlog(title, subTitle, category, body)" class="btn btn-danger">Post</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-4">
+
+    </div>
+</div>
+

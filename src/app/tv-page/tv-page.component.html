@@ -1,1 +1,19 @@
-<p>tv-page works!</p>
+<div class="row rowStyle">
+    <div class="row">
+        <h2 class="addSpacing"><strong>TV</strong></h2>
+    </div>
+    <div class="row addSpacing2 row-cols-4 no-gutters g-4">
+        <div class="col" *ngFor = "let tvBlog of tvBlogs">
+            <div class="card mx-auto h-100" style="width: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title"> {{tvBlog.title}} </h5>
+                  <h6 class="card-subtitle mb-2 text-muted"> {{tvBlog.subTitle}} </h6>
+                  <p class="card-text"> {{tvBlog.body | slice:0:200}}... </p>   
+                </div>
+                <div class="card-footer">
+                    <a routerLink="/blog-page"><button type="button" (click)="saveCurrentBlog(tvBlog)" class="btn btn-outline-dark">Read Post</button></a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

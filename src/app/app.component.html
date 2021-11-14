@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row expand">
+  <div class="row expand" *ngIf="!router.url.includes('login')">
     <navigation-bar></navigation-bar>
   </div>
   <div class="row">

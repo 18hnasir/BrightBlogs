@@ -1,0 +1,25 @@
+<div class="row rowStyle">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8 leftStyle">
+        <div class="style">
+            <img src="assets/img/Brightblogs.png" alt="BRIGHTBLOGS">
+            <h1>Welcome to BrightBlogs</h1>
+            <h1>The Right Place To Enjoy</h1>
+        </div>
+        <form class="style2">
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+              <input class="form-control" #username>
+              <div class="form-text">No password is needed.</div>
+            </div>
+            <div class="row">
+                <button routerLink="/home-page" type="submit" (click)="switchUser(username)" class="btn btn-danger">Sign In</button>
+            </div>           
+        </form>
+    </div>
+    <div class="col-2">
+    
+    </div>
+</div>
