@@ -3,54 +3,6 @@
         <h2 class="addSpacing"><strong>Movies</strong></h2>
     </div>
     <div class="row addSpacing2 row-cols-4 no-gutters g-4">
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Eternals Movie Review</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">It was alright, nothing special</h6>
-                  <p class="card-text">After recently watching Eternal in movie theaters, I have to say that it was not as I expected.</p>   
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Dune Movie Review</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">dictum ligula quam vitae nunc.</h6>
-                  <p class="card-text">onsectetur adipiscing elit. Mauris posuere, libero a auctor sodales, tortor lorem</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">No Time to Die</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Praesent condimentum justo nisi, sit ame</h6>
-                  <p class="card-text">laoreet felis vestibulum ut. Phasellus mattis Duis ut metus ante. Pellentesque tincidunt eros quis magna</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Movies That Are Unforgettable</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Proin odio sem, mollis ac justo ullamcorper, molestie vehicula</h6>
-                  <p class="card-text">Phasellus aliquet quis felis quis eleifend. Curabitur vitae dictum turpis. Aliquam tincidunt, arcu quis tincidunt placerat, urna</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
         <div class="col" *ngFor = "let movieBlog of movieBlogs">
           <div class="card mx-auto h-100" style="width: 20rem;">
               <div class="card-body">
@@ -59,7 +11,7 @@
                 <p class="card-text"> {{movieBlog.body | slice:0:200}}... </p>   
               </div>
               <div class="card-footer">
-                <a routerLink="/blog-page"><button type="button" class="btn btn-outline-dark">Read Post</button></a>
+                <a routerLink="/blog-page"><button type="button" (click)="saveCurrentBlog(movieBlog)" class="btn btn-outline-dark">Read Post</button></a>
               </div>
           </div>
         </div>

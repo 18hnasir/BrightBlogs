@@ -3,54 +3,6 @@
         <h2 class="addSpacing"><strong>Games</strong></h2>
     </div>
     <div class="row addSpacing2 row-cols-4 no-gutters g-4">
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Vanguard Game Review</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">It was alright, nothing special</h6>
-                  <p class="card-text">Dapibus consectetur non in quam. Cras vel metus et lacus tempus tristique eu ut lorem.</p>   
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Overwatch Is Amazing</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">dictum ligula quam vitae nunc.</h6>
-                  <p class="card-text">onsectetur adipiscing elit. Mauris posuere, libero a auctor sodales, tortor lorem</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">When Is The Next Mario?</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Praesent condimentum justo nisi, sit ame</h6>
-                  <p class="card-text">laoreet felis vestibulum ut. Phasellus mattis Duis ut metus ante. Pellentesque tincidunt eros quis magna</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card mx-auto h-100" style="width: 20rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Is Virtual Reality Worth It?</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Proin odio sem, mollis ac justo ullamcorper, molestie vehicula</h6>
-                  <p class="card-text">Phasellus aliquet quis felis quis eleifend. Curabitur vitae dictum turpis. Aliquam tincidunt, arcu quis tincidunt placerat, urna</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark">Read Post</a>
-                </div>
-              </div>
-        </div>
         <div class="col" *ngFor = "let gameBlog of gameBlogs">
           <div class="card mx-auto h-100" style="width: 20rem;">
               <div class="card-body">
@@ -59,7 +11,7 @@
                 <p class="card-text"> {{gameBlog.body | slice:0:200}}... </p>   
               </div>
               <div class="card-footer">
-                <a routerLink="/blog-page"><button type="button" class="btn btn-outline-dark">Read Post</button></a>
+                <a routerLink="/blog-page"><button type="button" (click)="saveCurrentBlog(gameBlog)" class="btn btn-outline-dark">Read Post</button></a>
               </div>
           </div>
         </div>

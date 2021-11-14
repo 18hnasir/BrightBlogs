@@ -22,4 +22,12 @@ export class GamesPageComponent implements OnInit {
     localStorage.setItem("tbBlogs", JSON.stringify(this.gameBlogs));
   }
 
+  //Save the selected gameBlog into local so that 
+  //we can retrieve that blog from the blogs array and
+  //changes its values
+  saveCurrentBlog(gameBlog: any) {
+    localStorage.removeItem("currentBlog");
+    localStorage.setItem("currentBlog", JSON.stringify(gameBlog));
+  }
+
 }

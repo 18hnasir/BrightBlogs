@@ -22,4 +22,12 @@ export class MoviesPageComponent implements OnInit {
     localStorage.setItem("tbBlogs", JSON.stringify(this.movieBlogs));
   }
 
+  //Save the selected movieBlog into local so that 
+  //we can retrieve that blog from the blogs array and
+  //changes its values
+  saveCurrentBlog(movieBlog: any) {
+    localStorage.removeItem("currentBlog");
+    localStorage.setItem("currentBlog", JSON.stringify(movieBlog));
+  }
+
 }
